@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src https://*; child-src 'none'; script-src 'nonce-Xiojd98a8jd3s9kFiDi29Uijwdu' 'sha256-MeEbFMD7T2IrEYthhPsUnPFdzIml/BEnmJTStr9zyDM=';" 
+  />
+  <title>Document</title>
+</head>
+<body>
+  hello CSP
+  <!-- script-src 设置了 'nonce-Xiojd98a8jd3s9kFiDi29Uijwdu' -->
+  <script nonce="Xiojd98a8jd3s9kFiDi29Uijwdu">alert(Date.now())</script>
+  <!-- script-src 设置了 'sha256-MeEbFMD7T2IrEYthhPsUnPFdzIml/BEnmJTStr9zyDM=' -->
+  <script>alert(666)</script>
+</body>
+</html>
