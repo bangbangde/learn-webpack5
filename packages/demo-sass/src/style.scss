@@ -1,0 +1,18 @@
+@import "../style/var.scss";
+
+/// hold
+body {
+  font-size: 16px;
+  color: $base-color;
+}
+
+.btn {
+  color: black;
+  &:hover {
+    color: green;
+  }
+
+  .loading & {
+    display: none;
+  }
+}

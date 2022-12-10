@@ -4,7 +4,16 @@ module.exports = {
   mode: 'none',
   entry: './src/home.js',
   output: {
-    asyncChunks: false,
+    filename: '[name].[contenthash].js', // chunk 级别
+    crossOriginLoading: 'use-credentials',
     clean: true
   },
+  module: {
+    rules: [
+      {
+        test: /\.jpg$/i,
+        type: "asset/resource"
+      }
+    ]
+  }
 };

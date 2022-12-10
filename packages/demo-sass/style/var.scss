@@ -1,0 +1,13 @@
+// Sass 变量：将一个值赋给一个以 $ 开头的名字。
+// <variable>: <expression>
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+@use "sass:math" as math;
+$pi: math.$pi;
+
+h1 {
+  color: black;
+  border-color: $border-dark;
+  font-size: $pi;
+}

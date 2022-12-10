@@ -1,0 +1,20 @@
+h1 {
+  color: black;
+  border-color: rgba(198, 83, 140, 0.88);
+  font-size: 3.1415926536;
+}
+
+body {
+  font-size: 16px;
+  color: #c6538c;
+}
+
+.btn {
+  color: black;
+}
+.btn:hover {
+  color: green;
+}
+.loading .btn {
+  display: none;
+}

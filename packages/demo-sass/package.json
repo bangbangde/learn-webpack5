@@ -1,9 +1,13 @@
 {
-  "name": "lesson-00",
+  "name": "demo-sass",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "devDependencies": {
+    "css-loader": "^6.7.2",
+    "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0"
   },
@@ -12,6 +16,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {}
+  "license": "ISC"
 }
